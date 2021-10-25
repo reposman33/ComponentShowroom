@@ -1,8 +1,29 @@
-<h2>This is the page containing the component</h2>
+<h2>This is the page containing the button component</h2>
 
 <div class="component-section">
-	<h3>This is an example of the component.</h3>
+	<h3>This is an example of an active button.</h3>
 	<div class="component">
-		<ui-button> </ui-button>
+		<ui-button [active]="true">OK</ui-button>
+	</div>
+</div>
+
+<div class="component-section">
+	<h3>This is an example of an inactive button.</h3>
+	<div class="component">
+		<ui-button [active]="false">OK</ui-button>
+	</div>
+</div>
+
+<div class="component-section">
+	<h3>This is an example of a button to submit a form.</h3>
+	<div class="component">
+		<ui-button [formAction]="'submit'">OK</ui-button>
+	</div>
+</div>
+
+<div class="component-section">
+	<h3>This is an example of a button to save something.</h3>
+	<div class="component">
+		<ui-button [formAction]="'save'">OK</ui-button>
 	</div>
 </div>

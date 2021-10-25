@@ -1,0 +1,31 @@
+@use "../../../styles/variables/colors";
+@use "../../../styles/variables/paddings";
+
+.button {
+	background-color: colors.$color-purple;
+	border: none;
+	color: colors.$color-white;
+	padding: paddings.$padding-button;
+	transition: scale 0.2s linear;
+
+	&:hover {
+		scale: 1.05;
+	}
+}
+
+.button-active {
+	background-color: colors.$color-purple;
+}
+.button-inactive {
+	background-color: colors.$color-grey;
+	color: colors.$color-darkgrey;
+}
+.button--submit {
+	background-color: colors.$color-orange;
+	color: colors.$color-white;
+}
+.button--save {
+	background-color: colors.$color-white;
+	border: 1px solid colors.$color-orange;
+	color: colors.$color-orange;
+}
