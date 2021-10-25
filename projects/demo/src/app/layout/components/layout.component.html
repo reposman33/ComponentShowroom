@@ -1,0 +1,15 @@
+<app-page>
+	<app-header header>Component Showroom</app-header>
+
+	<ng-container sidebar>
+		<h1>Componenten</h1>
+
+		<app-nav-list>
+			<app-nav-item *ngFor="let link of links" [url]="link.url">
+				{{ link.title }}
+			</app-nav-item>
+		</app-nav-list>
+	</ng-container>
+
+	<router-outlet></router-outlet>
+</app-page>
