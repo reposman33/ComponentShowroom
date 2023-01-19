@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
 	templateUrl: './pull-down.page.html',
 	styleUrls: ['./pull-down.page.scss'],
 })
-export class PullDownPage implements OnInit {
+export class PullDownPageComponent implements OnInit {
 	constructor() {}
 
 	ngOnInit(): void {}

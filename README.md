@@ -1,27 +1,25 @@
-# Fedex
+# webapp - skeleton
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
+Using the monorepo approach supported by the Angular CLI:
 
-## Development server
+[https://angular.io/cli/add](https://angular.io/cli/add)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Create web applications by
 
-## Code scaffolding
+- creating the ui components needed in the app;
+- creating a demo page for each ui component showing all its variations;
+- creating services in the data-module;
+- creating the web app by using the components in the ui-components library and services in the data-modules library;
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Add a new page in the demo:
 
-## Build
+- create a new component in projects\demo\src\app\pages: `ng g c pages/logo --module=pages/pages.module --type=page  --project=demo`
+- *Don't forget to add the component to the module's exports: array*
+- add a link to the new page in `projects\demo\src\app\layout\components\layout.component.ts`
+- add a new route pointing to the page in `projects\demo\src\app\app-routing.module.ts`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Add a new component 'toggle' to the ui-components library (add  --dry-run to check out)
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- add module: `ng g m components/toggle --project=ui-components`
+- add component: `ng g c components/toggle --project=ui-components`
+- update index file `projects\ui-components\src\index.ts`

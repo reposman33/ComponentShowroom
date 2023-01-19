@@ -1,16 +1,1 @@
-export { ButtonComponent } from './lib/components/button/button.component';
-export { ButtonModule } from './lib/components/button/button.module';
-export { CheckboxComponent } from './lib/components/checkbox/checkbox.component';
-export { CheckboxModule } from './lib/components/checkbox/checkbox.module';
-export { HeaderComponent } from './lib/components/header/header.component';
-export { HeaderModule } from './lib/components/header/header.module';
-export { InputComponent } from './lib/components/input/input.component';
-export { InputModule } from './lib/components/input/input.module';
-export { ListComponent } from './lib/components/list/list.component';
-export { ListModule } from './lib/components/list/list.module';
-export { ModalComponent } from './lib/components/modal/modal.component';
-export { ModalModule } from './lib/components/modal/modal.module';
-export { PullDownComponent } from './lib/components/pull-down/pull-down.component';
-export { PullDownModule } from './lib/components/pull-down/pull-down.module';
-export { RadioButtonComponent } from './lib/components/radio-button/radio-button.component';
-export { RadioButtonModule } from './lib/components/radio-button/radio-button.module';
+export * from './lib/ui-components.module';

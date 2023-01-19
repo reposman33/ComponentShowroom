@@ -107,6 +107,9 @@
 			"root": "projects/ui-components",
 			"sourceRoot": "projects/ui-components/src",
 			"prefix": "ui",
+			"@schematics/angular:component": {
+				"style": "scss"
+			},
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:ng-packagr",
@@ -241,7 +244,13 @@
 							"browserTarget": "demo:build:development"
 						}
 					},
-					"defaultConfiguration": "development"
+					"defaultConfiguration": "development",
+					"options": {
+						"sslKey": "ssl-configuration/ca.key",
+						"sslCert": "ssl-configuration/ca.crt",
+						"ssl": true,
+						"port": 4200
+					}
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",

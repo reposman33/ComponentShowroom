@@ -19,7 +19,8 @@
 		"lib": ["es2018", "dom"],
 		"paths": {
 			"@data-modules": ["projects/data-modules/src", "dist/data-modules"],
-			"@ui-components": ["projects/ui-components/src", "dist/ui-components"]
+			"@ui-components": ["projects/ui-components/src", "dist/ui-components"],
+			"@pages": ["projects/demo/src/app/pages/"]
 		}
 	},
 	"angularCompilerOptions": {

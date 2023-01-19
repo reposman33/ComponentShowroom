@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
 	templateUrl: './radio-button.page.html',
 	styleUrls: ['./radio-button.page.scss'],
 })
-export class RadioButtonPage implements OnInit {
+export class RadioButtonPageComponent implements OnInit {
 	constructor() {}
 
 	ngOnInit(): void {}
